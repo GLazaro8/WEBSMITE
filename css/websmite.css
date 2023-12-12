@@ -1,0 +1,596 @@
+/******************************************************************/
+/*              Style sheet for SMITE web page                    */
+/*              Author: Gonzalo Lázaro                            */
+/*              version: 1.0                                      */
+/*              comments: First evaluation project                */
+/******************************************************************/
+
+@font-face {                        
+    font-family: textonormal;
+    src: url(../font/dum1.ttf);
+}
+
+/***************************************************************************************
+*                                  ESTILO GENERAL                                      *
+***************************************************************************************/
+
+* {box-sizing: border-box;
+    color: goldenrod}                         
+
+body {margin: 0;
+    padding: 0;                        
+    background-image: url(../img/fondo_ia.png);
+    font-family: textonormal;
+}
+
+#wrapper {background-color: rgb(21,36,71);
+        width: 100%; 
+        margin: auto;} 
+
+button{}
+
+button:hover{}
+
+html{scroll-behavior: smooth;}
+
+p{
+    font-size: 1.5em;
+}
+
+.title{padding-top: 6vh;
+        font-size: 2em;
+        text-align: center;
+        text-shadow: 2px 2px rgb(134, 101, 19),
+                -2px 2px rgb(134, 101, 19),
+                2px -2px rgb(134, 101, 19),
+                -2px -2px rgb(134, 101, 19);}
+
+.GODS{padding-top: 6vh;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px rgb(134, 101, 19),
+            -2px 2px rgb(134, 101, 19),
+            2px -2px rgb(134, 101, 19),
+            -2px -2px rgb(134, 101, 19);}
+
+/************************************************************************************
+*                                       NAVBAR                                      *
+************************************************************************************/
+
+nav{position: sticky;
+    top: 0;
+    z-index: 333;
+    opacity: 0.9;}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(21, 36, 71);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: goldenrod;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgb(28, 48, 95);
+    color: goldenrod;
+}
+
+  /* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} 
+
+/*****************************************************************************
+*                                HERO SECTION                                *
+*****************************************************************************/
+
+#hero {
+    background-image: url(../img/HeroBackground.jpg);
+                        height: 95vh;                   
+                        background-size: cover;
+                        background-position: center;
+                        position: relative;             
+}
+
+#logo {
+    top: 25%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    display: block;
+    width: 70%;
+}
+
+/**************************** HERO SECTION BUTTON ***************************/
+
+#hero button{
+    top: 75%;
+    left: 50%;                                      
+    position: absolute;                             
+    transform: translate(-50%,-50%);
+}
+
+#hero .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: rgb(21, 36, 71);
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+}
+
+#hero .button::before,
+.button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid goldenrod;
+    transition: all .15s ease;
+}
+
+#hero .button::before {
+    top: 0;
+    border-bottom-width: 0;
+}
+
+#hero .button::after {
+    bottom: 0;
+    border-top-width: 0;
+}
+
+#hero .button:active,
+.button:focus {
+    outline: none;
+}
+
+#hero .button:active::before,
+.button:active::after {
+    right: 3px;
+    left: 3px;
+}
+
+#hero .button:active::before {
+    top: 3px;
+}
+
+#hero .button:active::after {
+    bottom: 3px;
+}
+
+#hero .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(21, 36, 71);
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+#hero .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: antiquewhite;
+}
+
+#hero .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: antiquewhite;
+    transition: all .2s ease;
+}
+
+#hero .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: rgb(167, 120, 1);
+    transform: skew(-15deg);
+    transition: all .2s ease;
+}
+
+#hero .button_text {
+    position: relative;
+    color: antiquewhite;
+}
+
+#hero .button:hover {
+    color: rgb(21, 36, 71);
+}
+
+#hero .button:hover .button_sl {
+    width: calc(100% + 15px);
+}
+
+#hero .button:hover .button_lg::after {
+    background-color: rgb(21, 36, 71);
+}
+
+
+/**********************************************************************************
+*                               INTRO SECTION                                     *
+**********************************************************************************/
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 100%; /******* MOBILE FIRST *******/
+}
+
+.col-2{
+    padding:3%;
+    padding-top: 6vh;
+}
+
+#intro .col-2 button{
+    border: 1px solid goldenrod;
+    background-color: rgb(21,36,71);
+    border-radius: 10px;
+    padding: 0%;
+}
+/* .col-2 .card{
+    border: 1px solid goldenrod;
+    background-color: rgb(21,36,71);
+    border-radius: 10px;
+    padding: 4%;
+} */
+
+/***************************************************************************************
+*                                 HOW TO PLAY SECTION                                  *
+***************************************************************************************/
+
+/* .grid-2 {
+    display: grid;
+    grid-template-columns: 100%; 
+}
+
+.col-2{
+    padding:3%;
+    padding-top: 6vh;
+} */
+
+#imghowtoplay{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+#howtoplay .btn {
+    background-color: goldenrod;
+    padding: 14px 40px;
+    color: rgb(21, 36, 71);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed goldenrod;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+}
+
+#howtoplay .btn span:last-child {
+    display: none;
+}
+
+#howtoplay .btn:hover {
+    transition: .4s;
+    border: 2px dashed goldenrod;
+    background-color: rgb(29, 53, 109);
+    color: goldenrod;
+}
+
+#howtoplay .btn:active {
+    background-color: goldenrod;
+}
+
+#more {display: none;}
+
+
+/***************************************************************************************
+*                                     GODS SECTION                                     *
+***************************************************************************************/
+
+#gods {
+    font-family: textonormal;
+    background-color: rgb(21, 36, 71);
+    color: goldenrod;
+    text-align: center;
+    padding: 3em 1em;
+}
+
+.accordion {
+    margin-left: 10%;
+    max-width: 80%;
+    text-align: center;
+}
+
+article {
+    border: 1px solid goldenrod;
+    padding: 1em;
+    margin: 1em auto;
+}
+
+input[type="radio"] {
+    appearance: none;
+    position: fixed;
+    top: -100vh; left: -100vh;
+
+& ~ div {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    }
+
+&:checked ~ div {
+    max-height: 1900px;
+    }
+}
+
+/**************************** GRID-4 EN GODS ***************************************/
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.col-4{padding: 4%;}
+
+
+/**************************** ESTILO DE LA CARD COL-4 *****************************/
+
+.card{border: 1px solid goldenrod;
+    background-color: rgb(21,36,71);
+    border-radius: 10px;
+    padding: 4%;
+}
+
+.card img{width:100%;}
+
+.card:hover{box-shadow: 5px 5px 5px rgb(139, 105, 18);}
+
+/**************************** FOOTER **********************************************/
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2%;
+}
+
+.grid-3d{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer .fa {
+    padding: 14px 14px;
+    color: white;
+    font-size: 1.7em;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius:50%;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a p{
+    border: hidden;
+    padding-left: 2%;
+}
+
+footer a p:hover{color: white;
+                border-left: 2px solid white;}
+
+footer a .fa:hover{
+    opacity: 0.7;
+}
+
+/****************** REDES SOCIALES *****************************/
+
+footer .fa-youtube-play{
+    background-color: #ff0000;
+}
+
+footer .fa-facebook{
+    background-color: #385998;
+}
+
+footer .fa-twitter{
+    background-color: #55ACEE;
+}
+
+footer .fa-instagram{
+    background-image: linear-gradient(to bottom right, rgb(165, 0, 165), rgb(255, 60, 0));
+}
+
+footer .fa-twitch{
+    background-color: #6441A5;
+}
+
+footer .fa-github{
+    background-color: rgb(79, 79, 79);
+}
+
+/*************************** SUBNAV ************************************************/
+
+
+
+/************************** The Modal (background) *********************************/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color: black;
+}
+
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+  /* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+#myBtn {cursor: pointer;}
+
+/***************************** GOOGLE MAPS ************************************/
+
+footer .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 75%; /* 4:3 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+  /* Then style the iframe to fit in the container div with full height and width */
+footer .responsive-iframe {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+}
+
+.col-4 {
+    padding: 2%;
+}
+
+
+/**************************** ESTILO VIDEO DENTRO DE CARD *************************/
+
+#gods .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+  /* Then style the iframe to fit in the container div with full height and width */
+#gods .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/**************************** RESPONSIVE TOPNAV ***********************************/
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 850px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 850px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+    .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+}
+
+/**************************** RESPONSIVIDAD **************************************/
+
+@media only screen and (width>650px){ /*********** tablet *************/
+    #wrapper {width:90%}
+    #logo {width: 50%}
+    .grid-4{grid-template-columns: 50% 50%;}
+    #gods p{font-size: 1.5em;}
+    #intro p{font-size: 1.5em;}
+    #howtoplay p{font-size: 1.5em;}
+    #contact p{font-size: 1.2em;}
+    &:checked ~ div {max-height: 1080px;}
+}
+
+@media only screen and (width>900px){ /*********** computer ***********/
+    .grid-2{grid-template-columns: 50% 50%}
+    .grid-3d{grid-template-columns: 25% 25% 50%;}
+    .grid-4{grid-template-columns: 25% 25% 25% 25%;}
+    .title{font-size: 3em;
+            text-align: left;}
+    .GODS{font-size: 3em}
+    #logo {width: 40%}
+    #gods p{font-size: 2em;}
+    #intro p{font-size: 2em;}
+    #howtoplay p{font-size: 2em;}
+    #contact p{font-size: 1.5em;}
+    &:checked ~ div {max-height: 540px;}
+}
+
+

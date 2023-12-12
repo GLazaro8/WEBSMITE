@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMITE Fan page</title>
+    <!-- Enlazo el css del estilo -->
+    <link rel="stylesheet" href="./css/websmite.css">
+    <link rel="shortcut icon" href="./img/favicon-png.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <!-- la estructura del layout en scroll -->
+    
+    <div id="wrapper"> <!-- contenedor general -->
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="active">Home</a>
+                <a href="#intro">What is SMITE?</a>
+                <a href="#howtoplay">How to play</a>
+                <a href="#gods">Gods</a>
+                <a href="#gamemodes">Game Modes</a>
+                <a href="#contact">Contact</a>
+                <!-- javascript:void(0) desactiva el comportamiento default del vinculo -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav> <!-- obligatorio -->
+        <!-- HERO SECTION -->
+        <section id="hero"> <!-- cuasi obligatorio -->
+            <img id="logo" src="./img/Smite_Logo.png">
+            <a href="https://www.smitegame.com/download/" target="_blank"><button class="button">
+            <span class="button_lg">
+                <span class="button_sl"></span>
+                <span class="button_text">Download Now</span>
+            </span>
+        </button></a>
+        </section>
+        <!-- INTRO SECTION (What is SMITE?) -->
+        <section id="intro">
+
+            <div class="grid-2">
+
+                <div class="col-2"> 
+                    <h1 class="title">What is SMITE?</h1>
+                    <p>SMITE is a 2014 free-to-play, third-person multiplayer online battle arena (MOBA) video game developed and published by Hi-Rez Studios for Microsoft Windows, Xbox One, PlayStation 4, Nintendo Switch, and Amazon Luna. In SMITE, players control a god, goddess or other mythological figure and take part in team-based combat, using their abilities and tactics against other player-controlled gods and non-player-controlled minions.</p>    
+                </div>
+
+                <div class="col-2">
+                    <a href="https://www.youtube.com/@smitegame" target="_blank"><button><div class="card">
+                        <img src="./img/Smite_intro.png">
+                        <p>SMITE Official Youtube Channel</p>
+                    </div></button></a>
+                
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- How to play SECTION -->
+        <section id="howtoplay">
+            <div class="grid-2">
+
+                <div class="col-2">
+                    <img id="imghowtoplay" src="./img/smite_pantheons.png">
+                </div>
+
+                <div class="col-2"> 
+                    <h1 class="title">How to play</h1>
+                    <p>At the beginning of each match, players select a god or other mythological figure to play as. Currently, players can choose between a large variety of characters from different pantheons including, but not limited to, Babylonian, Celtic, Chinese, Egyptian, Greek, Hindu, Japanese, Norse, Polynesian, Mayan, Aztec, Slavic and Yoruba. The characters of King Arthur's legends (referred to as the Arthurian pantheon in-game) and the Cthulhu Mythos (referred to as the pantheon of the Great Old Ones) are also considered pantheons in this video game.<span id="dots">...</span></p>
+                    
+                    <span id="more"><p>Each character is classified as one of the following classes: Assassin, Guardian, Hunter, Mage, or Warrior. Unless otherwise stated, two players on the same team cannot choose the same character (in competitive modes and those using a Draft pick method, each player must use a different character). Successful team configurations typically feature a well-rounded team following standard RPG raid configurations (tank, healer, physical/magical damage) during god selection.</p>
+                    
+                    <p>While most MOBA games are played from a top-down perspective, in SMITE, the player controls the god in a third-person perspective. Each god has a basic attack, a passive trait, and four abilities with varying effects (area damage, crowd control, status effects, etc.). These abilities are acquired and upgraded when the player's character levels up by gaining experience from being in range of minions when they are killed, taking down towers or phoenixes and defeating enemy characters. The maximum level is 20 and each successive level is more difficult to reach. Each player also accumulates gold through standard periodic income and by slaying enemies (player and NPC alike); gold is used to buy items for their god, as well as potions, wards and abilities.</p>
+                    <p></p>
+                    <p>Each game mode has a specific map it is played on, which is separated into "lanes", where waves of computer-controlled minions march toward the enemy base, and the "jungle", where computer-controlled monsters periodically spawn at specific locations distributed symmetrically across the map. Killing monsters in said jungle grants experience points and gold; killing certain monsters causes a "buff" to drop on the ground which, when picked up by a player, grants temporary bonuses to stats such as damage dealt, movement speed, attack speed. There are three special monsters who appear less frequently that grant the team which lands the killing blow a set amount of gold, as well as a temporary damage buff and speed boost when coming out of the base. </p></span>
+                    <button class="btn" onclick="myNewFunction()" id="mybutton">Read more
+                    </button>
+                </div>
+
+
+            </div>
+
+        </section>
+        
+        </section><!-- secciones variables según temática -->
+        
+        <section id="gods">
+            
+            <div class="accordion">
+                <h1 class="GODS">Gods</h1>
+                <p>Here you have a couple of gods from each pantheon, but there are lots more!</p>
+            
+              <article>
+                <input id="article1" type="radio" name="articles" checked>
+                <label for="article1">
+                    <h2>Arthurian</h2>
+                </label>
+                <div>
+                    <div class="grid-4">
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/KingArthur.webp" alt="">
+                                <h3>King Arthur</h3>
+                                <h3><i>Wielder of Excalibur</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/Lancelot.webp" alt="">
+                                <h3>Lancelot</h3>
+                                <h3><i>First Knight of the Round Table</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/Merlin.webp" alt="">
+                                <h3>Merlin</h3>
+                                <h3><i>The Master Wizard</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/MorganLeFay.webp" alt="">
+                                <h3>Morgan Le Fay</h3>
+                                <h3><i>The Dark Enchantress</i></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </article>
+            
+              <article>
+                <input id="article2" type="radio" name="articles">
+                <label for="article2">
+                  <h2>Babylonian</h2>
+                </label>
+                <div>
+                    <div class="grid-4">
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/Gilgamesh.webp" alt="">
+                                <h3>Gilgamesh</h3>
+                                <h3><i>King of Uruk</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/Ishtar.webp" alt="">
+                                <h3>Ishtar</h3>
+                                <h3><i>Goddess of Love and War</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/Tiamat.webp" alt="">
+                                <h3>Tiamat</h3>
+                                <h3><i>Goddess of the Salt Sea</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/lots-of-gods-333600892.png" alt="">
+                                <h3>¿?</h3>
+                                <h3><i>Coming Soon...</i></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </article>
+            
+              <article>
+                <input id="article3" type="radio" name="articles">
+                <label for="article3">
+                  <h2>Chinese</h2>
+                </label>
+                <div>
+                    <div class="grid-4">
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/Change.webp" alt="">
+                                <h3>Chang'e</h3>
+                                <h3><i>Faerie of the Moon</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/HouYi.webp" alt="">
+                                <h3>Hou Yi</h3>
+                                <h3><i>Defender of the Earth</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/NuWa.webp" alt="">
+                                <h3>Nu Wa</h3>
+                                <h3><i>Guardian of Heaven</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/SunWukong.webp" alt="">
+                                <h3>Sun Wukong</h3>
+                                <h3><i>The Monkey King</i></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </article>
+            
+              <article>
+                <input id="article4" type="radio" name="articles">
+                <label for="article4">
+                  <h2>Celtic</h2>
+                </label>
+                <div>
+                    <div class="grid-4">
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/Artio.webp" alt="">
+                                <h3>Artio</h3>
+                                <h3><i>The Bear Goddess</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/Cernunnos.webp" alt="">
+                                <h3>Cernunnos</h3>
+                                <h3><i>The Horned God</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/CuChulainn.webp" alt="">
+                                <h3>Cu Chulainn</h3>
+                                <h3><i>Hound of Ulster</i></h3>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="./img/TheMorrigan.webp" alt="">
+                                <h3>The Morrigan</h3>
+                                <h3><i>Phantom Queen</i></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </article>
+
+              <article>
+                <input id="article5" type="radio" name="articles">
+                <label for="article5">
+                  <h2>Egyptian</h2>
+                </label>
+                <div>
+                  <div class="grid-4">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Anubis.webp" alt="">
+                            <h3>Anubis</h3>
+                            <h3><i>God of the Dead</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Neith.webp" alt="">
+                            <h3>Neith</h3>
+                            <h3><i>Weaver of Fate</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Ra.webp" alt="">
+                            <h3>Ra</h3>
+                            <h3><i>Sun God</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Serqet.webp" alt="">
+                            <h3>Serqet</h3>
+                            <h3><i>Goddess of Venom</i></h3>
+                        </div>
+                    </div>
+                </div>
+              </article>
+
+              <article>
+                <input id="article6" type="radio" name="articles">
+                <label for="article6">
+                  <h2>Greek</h2>
+                </label>
+                <div>
+                  <div class="grid-4">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Apollo.webp" alt="">
+                            <h3>Apollo</h3>
+                            <h3><i>God of Music</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Chronos.webp" alt="">
+                            <h3>Chronos</h3>
+                            <h3><i>Keeper of Time</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Nemesis.jpg" alt="">
+                            <h3>Nemesis</h3>
+                            <h3><i>Goddess of Vengeance</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Zeus.webp" alt="">
+                            <h3>Zeus</h3>
+                            <h3><i>God of the Sky</i></h3>
+                        </div>
+                    </div>
+                </div>
+              </article>
+
+              <article>
+                <input id="article8" type="radio" name="articles">
+                <label for="article8">
+                  <h2>Hindu</h2>
+                </label>
+                <div>
+                  <div class="grid-4">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Agni.webp" alt="">
+                            <h3>Agni</h3>
+                            <h3><i>God of Fire</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Ganesha.webp" alt="">
+                            <h3>Ganesha</h3>
+                            <h3><i>God of Success</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Rama.webp" alt="">
+                            <h3>Rama</h3>
+                            <h3><i>Seventh Avatar of Vishnu</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Ravana.webp" alt="">
+                            <h3>Ravana</h3>
+                            <h3><i>Demon King of Lanka</i></h3>
+                        </div>
+                    </div>
+                </div>
+              </article>
+
+              <article>
+                <input id="article9" type="radio" name="articles">
+                <label for="article9">
+                  <h2>Japanese</h2>
+                </label>
+                <div>
+                  <div class="grid-4">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Amaterasu.webp" alt="">
+                            <h3>Amaterasu</h3>
+                            <h3><i>The Shinning Light</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Hachiman.webp" alt="">
+                            <h3>Hachiman</h3>
+                            <h3><i>Lord of the Eight Banners</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Susano.webp" alt="">
+                            <h3>Susano</h3>
+                            <h3><i>God of the Summer Storm</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Tsukuyomi.webp" alt="">
+                            <h3>Tsukuyomi</h3>
+                            <h3><i>God of the Moon</i></h3>
+                        </div>
+                    </div>
+                </div>
+              </article>
+
+              <article>
+                <input id="article10" type="radio" name="articles">
+                <label for="article10">
+                  <h2>Maya</h2>
+                </label>
+                <div>
+                  <div class="grid-4">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Awilix.webp" alt="">
+                            <h3>Awilix</h3>
+                            <h3><i>Goddess of the Moon</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Chaac.webp" alt="">
+                            <h3>Chaac</h3>
+                            <h3><i>God of Rain</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/HunBatz.webp" alt="">
+                            <h3>Hun Batz</h3>
+                            <h3><i>The Howler Monkey God</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Kukulkan.webp" alt="">
+                            <h3>Kukulkan</h3>
+                            <h3><i>Serpent of the Nine Winds</i></h3>
+                        </div>
+                    </div>
+                </div>
+              </article>
+
+              <article>
+                <input id="article11" type="radio" name="articles">
+                <label for="article11">
+                  <h2>Norse</h2>
+                </label>
+                <div>
+                  <div class="grid-4">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Hel.webp" alt="">
+                            <h3>Hel</h3>
+                            <h3><i>Goddess of the Underworld</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Loki.webp" alt="">
+                            <h3>Loki</h3>
+                            <h3><i>The Trickster God</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Odin.webp" alt="">
+                            <h3>Odin</h3>
+                            <h3><i>The Allfather</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Thor.webp" alt="">
+                            <h3>Thor</h3>
+                            <h3><i>God of Thunder</i></h3>
+                        </div>
+                    </div>
+                </div>
+              </article>
+
+              <article>
+                <input id="article13" type="radio" name="articles">
+                <label for="article13">
+                  <h2>Roman</h2>
+                </label>
+                <div>
+                  <div class="grid-4">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Bellona.webp" alt="">
+                            <h3>Bellona</h3>
+                            <h3><i>Goddess of War</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Cupid.webp" alt="">
+                            <h3>Cupid</h3>
+                            <h3><i>God of Love</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Discordia.webp" alt="">
+                            <h3>Discordia</h3>
+                            <h3><i>Goddess of Strife</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Hercules.webp" alt="">
+                            <h3>Hercules</h3>
+                            <h3><i>Champion of Rome</i></h3>
+                        </div>
+                    </div>
+                </div>
+              </article>
+
+              <article>
+                <input id="article14" type="radio" name="articles">
+                <label for="article14">
+                  <h2>Others</h2>
+                </label>
+                <div>
+                  <div class="grid-4">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Pele.webp" alt="">
+                            <h3>Pele</h3>
+                            <h3><i>Goddess of Volcanoes (Polynesian)</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Chernobog.webp" alt="">
+                            <h3>Chernobog</h3>
+                            <h3><i>Lord of Darkness (Slavic)</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/BaronSamedi.webp" alt="">
+                            <h3>Baron Samedi</h3>
+                            <h3><i>God of Life and Death (Voodoo)</i></h3>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="./img/Yemoja.webp" alt="">
+                            <h3>Yemoja</h3>
+                            <h3><i>Goddess of Rivers (Yoruba)</i></h3>
+                        </div>
+                    </div>
+                </div>
+              </article>
+            
+            </div>
+            
+        </section>
+        <section>
+            <h1>GAME MODES</h1>
+            <p>In this section I want to add a gallery with the different maps and game modes</p>
+        </section>
+        <footer id="contact">
+            <div class="grid-3d">
+
+                <div class="col-4">
+                    <h3>Follow SMITE here</h3>
+                    <a href="https://www.youtube.com/@smitegame" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/smitegame/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/smitegame" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/smitegame/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.twitch.tv/smitegame" target="_blank"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+                    <a href="https://github.com/GLazaro8" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+                    <h3>OFFICIAL SITE</h3>
+                    <a href="https://www.smitegame.com/" target="_blank"><p>SMITE Official web page</p></a>
+
+                    <!-- Trigger/Open The Modal -->
+                    <h3 id="myBtn">Credits</h3>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                    
+                    <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur mollitia quam impedit soluta fugiat ipsa in aperiam facere excepturi harum nobis officia repudiandae, odio doloribus doloremque maiores reprehenderit quasi tempora?
+                            Saepe corrupti in ipsa dolorum eligendi debitis! Quia reprehenderit nemo vitae temporibus iure, aperiam illo autem assumenda ex blanditiis odio praesentium deserunt consequatur maiores commodi iusto sunt vero voluptate dolorem.
+                            Culpa incidunt architecto eaque deleniti omnis, voluptatum dicta repellat. Ducimus ratione ut fugiat maiores, doloribus perferendis. Est, unde illum esse eum nihil, temporibus repellat ut, animi ratione reiciendis amet. Aperiam!</p>
+                        </div>
+                    </div> 
+
+                </div>
+
+                <div class="col-4" id="subnav">
+                    <a href="#"><p>Home</p></a>
+                    <a href="#intro"><p>What is SMITE?</p></a>
+                    <a href="#howtoplay"><p>How to play</p></a>
+                    <a href="#gods"><p>Gods</p></a>
+                    <a href="#gamemodes"><p>Game Modes</p></a>
+                </div>
+
+                <div class="col-2">
+                    <div class="container">
+                        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.256361209101!2d-4.5573823235062525!3d36.74041717226424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d2ffe3a137%3A0xe095a3ea561debe2!2sC.%20Frederick%20Terman%2C%2029590%2C%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1701687668857!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- prácticamente obligatorio -->
+    </div>
+
+    <script src="./js/functions.js"></script>
+
+</body>
+</html>
