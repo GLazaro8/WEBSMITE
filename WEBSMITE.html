@@ -86,8 +86,6 @@
 
         </section>
         
-        </section><!-- secciones variables según temática -->
-        
         <section id="gods">
             
             <div class="accordion">
@@ -557,9 +555,73 @@
             </div>
             
         </section>
-        <section>
-            <h1>GAME MODES</h1>
-            <p>In this section I want to add a gallery with the different maps and game modes</p>
+        <section id="gamemodes">
+            <h1 class="GODS">Game Modes</h1>
+            <!-- Container for the image gallery -->
+            <div class="container2">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                        <img src="./img/ConquestMap.webp" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                        <img src="./img/ArenaMap.webp" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                        <img src="./img/JoustMap.webp" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                        <img src="./img/AssaultMap.webp" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                        <img src="./img/SiegeMap.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                        <img src="./img/SlashMap.webp" style="width:100%">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption-container2">
+                    <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="./img/ConquestMap.webp" style="width:100%" onclick="currentSlide(1)" alt="Conquest (5vs5)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/ArenaMap.webp" style="width:100%" onclick="currentSlide(2)" alt="Arena (5vs5)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/JoustMap.webp" style="width:100%" onclick="currentSlide(3)" alt="Joust (3vs3 or 1vs1)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/AssaultMap.webp" style="width:100%" onclick="currentSlide(4)" alt="Assault (5vs5)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/SiegeMap.jpg" style="width:100%" onclick="currentSlide(5)" alt="Siege (4vs4)">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/SlashMap.webp" style="width:100%" onclick="currentSlide(6)" alt="Slash (5vs5)">
+                    </div>
+                </div>
+            </div>
         </section>
         <footer id="contact">
             <div class="grid-3d">
@@ -577,7 +639,7 @@
                     <a href="https://www.smitegame.com/" target="_blank"><p>SMITE Official web page</p></a>
 
                     <!-- Trigger/Open The Modal -->
-                    <h3 id="myBtn">Credits</h3>
+                    <h3 id="myBtn">Read More</h3>
 
                     <!-- The Modal -->
                     <div id="myModal" class="modal">

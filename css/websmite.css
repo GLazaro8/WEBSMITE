@@ -355,7 +355,7 @@ input[type="radio"] {
     }
 
 &:checked ~ div {
-    max-height: 1900px;
+    max-height: 1920px;
     }
 }
 
@@ -375,13 +375,113 @@ input[type="radio"] {
     background-color: rgb(21,36,71);
     border-radius: 10px;
     padding: 4%;
+    height: 100%;
 }
 
 .card img{width:100%;}
 
 .card:hover{box-shadow: 5px 5px 5px rgb(139, 105, 18);}
 
-/**************************** FOOTER **********************************************/
+/***********************************************************************************
+*                                GAME MODES SECTION                                *
+***********************************************************************************/
+
+#gamemodes{padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 2%}
+
+  /* Position the image container (needed to position the left and right arrows) */
+.container2 {
+    border: 1px solid goldenrod;
+    position: relative;
+}
+
+  /* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+  /* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+  /* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(29, 53, 109, 0.568);
+}
+
+  /* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 1em;
+    padding: 2% 3%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(83, 83, 83, 0.5);
+}
+
+  /* Container for image text */
+.caption-container2 {
+    text-align: center;
+    background-color: rgb(21,36,71);
+    padding: 2px 16px;
+    color: white;
+}
+
+.row{
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+  /* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/***********************************************************************************
+*                                      FOOTER                                      *
+***********************************************************************************/
 
 footer{
     background-color: black;
@@ -574,6 +674,9 @@ footer .responsive-iframe {
     #gods p{font-size: 1.5em;}
     #intro p{font-size: 1.5em;}
     #howtoplay p{font-size: 1.5em;}
+    #gamemodes{padding-left: 5%;
+                padding-right: 5%;
+                padding-bottom: 5%}
     #contact p{font-size: 1.2em;}
     &:checked ~ div {max-height: 1080px;}
 }
@@ -589,6 +692,9 @@ footer .responsive-iframe {
     #gods p{font-size: 2em;}
     #intro p{font-size: 2em;}
     #howtoplay p{font-size: 2em;}
+    #gamemodes{padding-left: 10%;
+                padding-right: 10%;
+                padding-bottom: 5%}
     #contact p{font-size: 1.5em;}
     &:checked ~ div {max-height: 540px;}
 }
