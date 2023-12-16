@@ -30,31 +30,38 @@
 
 <h3>Hero Section</h3>
 ![HeroSection](https://github.com/GLazaro8/WEBSMITE/assets/145454597/aa19b934-c9fb-4ee0-a1c2-dede29b3bbb6)
+
 <p>Para la hero section me he basado en el proyecto conjunto de clase de Black Mirror y he decidido bucar una imagen distintiva del videojego en google y usar un botón. El botón lo saqué de la página de uiverse, dándole un estilo acorde con los colores de mi página web. Además, aunque no se viera en clase, supuse que trtándose de un videojuego, qué mejor que poner un logo del mismo sobre la imagen de fondo. Usé lo visto en clase de como colocar algo en el centro de la página t traté de que no le quitara significado a la imagen de fondo pero que se viera bien el logo también.</p>
 
 <h3>What is SMITE?</h3>
-<img src="./smite.readme/whatissmite.png" alt="imagen what is SMITE?" style="width:50%">
+![whatissmite](https://github.com/GLazaro8/WEBSMITE/assets/145454597/6025cf37-b388-4789-bea7-8a9cd601632f)
+
 <p>He colocado aquí un grid de dos columnas tal y como hicimos en clase, sin embargo, al intentar poner un video en la segunda columna, no parecía verse en ningún buscador así que decidí usar las cardas que coloqué dentro de otra sección para crear un botón propio que te llevara al canal oficial de SMITE en Youtube.<br>En esta sección hablo sobre lo que es este videojuego y más o menos de lo que trata, todo a modo de introducción.</p>
 
 <h3>How to play</h3>
-<img src="./smite.readme/howtoplay.png" alt="imagen how to play" style="width:50%">
+![howtoplay](https://github.com/GLazaro8/WEBSMITE/assets/145454597/10b3159f-b729-4a8f-ace8-2d916a6597e5)
+
 <p>En esta sección me he limitado ha explicar más o menos en qué consiste este videojuego junto con un botón sacado de uiverse en el que se nos despliega más información acerca del objetivo del juego y como alcanzarlo y a colocar una foto mostrándo los diferentes panteones mitológicos que están presentes en el mismo.</p>
 
 <h3>Gods</h3>
-<img src="./smite.readme/gods.png" alt="imagen gods" style="width:50%">
+![gods](https://github.com/GLazaro8/WEBSMITE/assets/145454597/360ec829-752f-4dd7-9bc5-a889888413a5)
+
 <p>Esta es la sección que más me ha costado hacer con diferencia. El juego cuenta con tantos personajes, en este caso dioses, que no sabía como hacerlo para elegir cuáes debía introducir en esta sección.<br>Gracias a un accordion, pude limitar la introducción de todos los personajes además de hacerme una sección mucho más corta de lo que podría haber sido sin el. Usé un accordion de uiverse y dentro de cada apartado decidí usar cardas, con el nombre de cada dios y de lo que era junto con una imagen del mismo sacadas, en su mayoría de una Wiki no oficial del videojuego.</p>
 
-<h3>Game MOdes</h3>
-<img src="./smite.readme/gamemodes.png" alt="imagen game modes" style="width:50%">
+<h3>Game Modes</h3>
+![gamemodes](https://github.com/GLazaro8/WEBSMITE/assets/145454597/8505ba30-9a37-4a93-a7c6-c34c680d3467)
+
 <p>Una galería sacada de w3schools mostrando los diversos modos de juego que existen en SMITE. Cada imagen viene con el nombre del modo de juego y especificando la cantidad de jugadores que se enfrentan entre sí en el campo de batalla.</p>
 
 <h3>Footer (Contacts)</h3>
-<img src="./smite.readme/Footer" alt="imagen footer" style="width:50%">
+![Footer](https://github.com/GLazaro8/WEBSMITE/assets/145454597/af6bcbcc-98d4-4c5e-b0bf-d6460587809a)
+
 <p>Decidí crear botones para las distintas redes sociales del videojuego además de un enlace a mi propia página de github. Es posible que estés aquí al clicar ahí.<br>Además de las redes sociales, tenemos el link a la página oficial de SMITE, un botón de disclaimer creado con el modal visto en clase, una nueva barra de navegación en caso de que alguien quiera volvar a alguna sección de la página y el mapa del Centro Público de Formación Profesional Alan Turing.</p>
 
 <h2 id="estilo">Estilo de la página</h2>
 <h3>Paleta de colores</h3>
-<img src="./smite.readme/PaletaColores.png" alt="paleta de colores" style="width:50%">
+![PaletaColores](https://github.com/GLazaro8/WEBSMITE/assets/145454597/078230de-fa8c-422c-857f-5c9e64a22223)
+
 <p>La paleta ha consistido en el color goldenrod que te ofrece el propio visual studio code y luego dos azules oscuros muy parecidos.</p>
 <h3>Tipografías</h3>
 <p>../font/dum1.ttf</p>
