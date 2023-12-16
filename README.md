@@ -29,7 +29,7 @@
 </ul>
 
 <h3>Hero Section</h3>
-<img src="./smite.readme/HeroSection.png" alt="imagen de hero section" style="width:50%">
+![HeroSection](https://github.com/GLazaro8/WEBSMITE/assets/145454597/aa19b934-c9fb-4ee0-a1c2-dede29b3bbb6)
 <p>Para la hero section me he basado en el proyecto conjunto de clase de Black Mirror y he decidido bucar una imagen distintiva del videojego en google y usar un botón. El botón lo saqué de la página de uiverse, dándole un estilo acorde con los colores de mi página web. Además, aunque no se viera en clase, supuse que trtándose de un videojuego, qué mejor que poner un logo del mismo sobre la imagen de fondo. Usé lo visto en clase de como colocar algo en el centro de la página t traté de que no le quitara significado a la imagen de fondo pero que se viera bien el logo también.</p>
 
 <h3>What is SMITE?</h3>
