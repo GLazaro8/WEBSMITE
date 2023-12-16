@@ -15,7 +15,7 @@
 ***************************************************************************************/
 
 * {box-sizing: border-box;
-    color: goldenrod}                         
+    color: rgb(218, 165, 32)}                         
 
 body {margin: 0;
     padding: 0;                        
@@ -72,7 +72,7 @@ nav{position: sticky;
 .topnav a {
     float: left;
     display: block;
-    color: goldenrod;
+    color: #daa520;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
