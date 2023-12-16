@@ -37,7 +37,7 @@ p{
     font-size: 1.5em;
 }
 
-.title{padding-top: 6vh;
+.title{padding-top: 3vh;
         font-size: 2em;
         text-align: center;
         text-shadow: 2px 2px rgb(134, 101, 19),
@@ -247,7 +247,7 @@ nav{position: sticky;
 
 .grid-2 {
     display: grid;
-    grid-template-columns: 100%; /******* MOBILE FIRST *******/
+    grid-template-columns: 100%; 
 }
 
 .col-2{
@@ -260,6 +260,7 @@ nav{position: sticky;
     background-color: rgb(21,36,71);
     border-radius: 10px;
     padding: 0%;
+    cursor: pointer;
 }
 /* .col-2 .card{
     border: 1px solid goldenrod;
@@ -272,20 +273,14 @@ nav{position: sticky;
 *                                 HOW TO PLAY SECTION                                  *
 ***************************************************************************************/
 
-/* .grid-2 {
-    display: grid;
-    grid-template-columns: 100%; 
-}
-
-.col-2{
-    padding:3%;
-    padding-top: 6vh;
-} */
+#htpstyle {padding-left: 3%;
+            padding-right: 3%;}
 
 #imghowtoplay{
     display: block;
     margin: auto;
     width: 100%;
+    padding-top: 5%;
 }
 
 #howtoplay .btn {
@@ -329,6 +324,7 @@ nav{position: sticky;
     color: goldenrod;
     text-align: center;
     padding: 3em 1em;
+    padding-top: 5%;
 }
 
 .accordion {
@@ -342,6 +338,8 @@ article {
     padding: 1em;
     margin: 1em auto;
 }
+
+article h2{cursor: pointer;}
 
 input[type="radio"] {
     appearance: none;
@@ -380,7 +378,7 @@ input[type="radio"] {
 
 .card img{width:100%;}
 
-.card:hover{box-shadow: 5px 5px 5px rgb(139, 105, 18);}
+.card:hover{box-shadow: 5px 5px 5px 5px rgb(139, 105, 18);}
 
 /***********************************************************************************
 *                                GAME MODES SECTION                                *
@@ -570,7 +568,7 @@ footer .fa-github{
 
   /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: rgb(23, 46, 100);
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
@@ -618,9 +616,6 @@ footer .responsive-iframe {
     padding: 2%;
 }
 
-
-/**************************** ESTILO VIDEO DENTRO DE CARD *************************/
-
 #gods .container {
     position: relative;
     overflow: hidden;
@@ -667,22 +662,24 @@ footer .responsive-iframe {
 
 /**************************** RESPONSIVIDAD **************************************/
 
-@media only screen and (width>650px){ /*********** tablet *************/
+@media only screen and (width>650px){ 
     #wrapper {width:90%}
     #logo {width: 50%}
     .grid-4{grid-template-columns: 50% 50%;}
     #gods p{font-size: 1.5em;}
     #intro p{font-size: 1.5em;}
     #howtoplay p{font-size: 1.5em;}
+    #htpstyle {padding-left: 5%;
+                padding-right: 5%;}
     #gamemodes{padding-left: 5%;
                 padding-right: 5%;
                 padding-bottom: 5%}
     #contact p{font-size: 1.2em;}
     &:checked ~ div {max-height: 1080px;}
+    
 }
 
-@media only screen and (width>900px){ /*********** computer ***********/
-    .grid-2{grid-template-columns: 50% 50%}
+@media only screen and (width>900px){ 
     .grid-3d{grid-template-columns: 25% 25% 50%;}
     .grid-4{grid-template-columns: 25% 25% 25% 25%;}
     .title{font-size: 3em;
@@ -692,6 +689,10 @@ footer .responsive-iframe {
     #gods p{font-size: 2em;}
     #intro p{font-size: 2em;}
     #howtoplay p{font-size: 2em;}
+    #imghowtoplay {padding-left: 10%;
+                padding-right: 10%;}
+    #htpstyle {padding-left: 10%;
+                padding-right: 10%;}
     #gamemodes{padding-left: 10%;
                 padding-right: 10%;
                 padding-bottom: 5%}
@@ -699,4 +700,6 @@ footer .responsive-iframe {
     &:checked ~ div {max-height: 540px;}
 }
 
-
+@media only screen and (width>1300px){
+    .grid-2{grid-template-columns: 50% 50%}
+}
